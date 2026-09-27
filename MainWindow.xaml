@@ -19,7 +19,7 @@
                 <TextBlock Text="Keep your team’s details in one place." Foreground="#64748B"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                <Button Content="_Log out" Click="Logout_Click" Padding="14,8"/>
+                <Button Content="_Log out" Click="Logout_Click" Padding="14,8" Background="#FFC61010" Foreground="White"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="2">
