@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Data/EmployeeRepository.cs" Link="EmployeeRepository.cs" />
+    <Compile Include="../Data/AdminRepository.cs" Link="AdminRepository.cs" />
+    <Compile Include="../Models/Employee.cs" Link="Employee.cs" />
+    <Compile Include="../Models/DepartmentCount.cs" Link="DepartmentCount.cs" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.9" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.5" />
+  </ItemGroup>
+</Project>

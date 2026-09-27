@@ -1,0 +1,26 @@
+<Window x:Class="EmployeeCrud.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin login" Width="460" SizeToContent="Height"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="#F3F6FA" FontFamily="Segoe UI" FontSize="14" Foreground="#172B43">
+    <Border Margin="28" Background="White" CornerRadius="10" BorderBrush="#E2E8F0" BorderThickness="1" Padding="28">
+        <StackPanel>
+            <TextBlock Text="PEOPLE / WORKSPACE" FontSize="11" FontWeight="Bold" Foreground="#25766C"/>
+            <TextBlock x:Name="TitleText" Text="Admin login" FontSize="28" FontWeight="SemiBold" Margin="0,8,0,6"/>
+            <TextBlock x:Name="SubtitleText" Text="Sign in to open the employee directory."
+                       Foreground="#64748B" TextWrapping="Wrap"/>
+            <TextBlock Text="Username" Style="{StaticResource FieldLabel}"/>
+            <TextBox x:Name="UsernameBox" MaxLength="50" AutomationProperties.Name="Username"/>
+            <TextBlock Text="Password" Style="{StaticResource FieldLabel}"/>
+            <PasswordBox x:Name="PasswordInput" MaxLength="128" AutomationProperties.Name="Password"/>
+            <TextBlock x:Name="ConfirmLabel" Text="Confirm password" Style="{StaticResource FieldLabel}"/>
+            <PasswordBox x:Name="ConfirmInput" MaxLength="128" AutomationProperties.Name="Confirm password"/>
+            <TextBlock x:Name="ErrorText" Foreground="#B42318" TextWrapping="Wrap" Margin="0,16,0,0"
+                       AutomationProperties.LiveSetting="Polite"/>
+            <Button x:Name="ActionButton" Content="_Log in" Click="ActionButton_Click"
+                    Background="#167568" Foreground="White" Margin="0,18,0,0"/>
+            <TextBlock x:Name="HintText" TextWrapping="Wrap" FontSize="11" Foreground="#64748B" Margin="0,16,0,0"/>
+        </StackPanel>
+    </Border>
+</Window>
